@@ -1,6 +1,6 @@
 import React from "react";
 
-export function Body({workerId}){
+export function Body({workerIdn}){
 
 const [jobsArray,setJobsArray] = React.useState([]);
 
