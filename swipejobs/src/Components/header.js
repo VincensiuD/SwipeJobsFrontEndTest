@@ -1,9 +1,9 @@
-
+import {commStyle} from "./commonStyle";
 
 export function Header({fullName}){
 
     return(
-        <div style={style.headerStyle}>
+        <div style={{...commStyle.spaceBetween, ...style.headerStyle}}>
             <div>
                 <p>swipejobs</p>
             </div>
@@ -15,11 +15,9 @@ export function Header({fullName}){
     );
 }
 
-const style = {
+export const style = {
     headerStyle:{
         backgroundColor : "black",
         color: "white",
-        display: "flex",
-        justifyContent: "space-between",
     }
 }

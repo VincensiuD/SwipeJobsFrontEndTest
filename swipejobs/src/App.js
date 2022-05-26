@@ -31,7 +31,7 @@ useEffect(
   return (
     <div className="App">
       <Header fullName={workerName}/>
-      <Body workerId={workerId}/>
+      <Body workerId={workerId} />
     </div>
   );
 }

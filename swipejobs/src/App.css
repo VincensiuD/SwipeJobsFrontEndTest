@@ -13,6 +13,12 @@
   }
 }
 
+#hrly, #miles{
+  margin-block-start: 0;
+}
+
+
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
