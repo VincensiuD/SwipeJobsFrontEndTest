@@ -12,11 +12,18 @@
   border-top: 1px solid grey;
 }
 
-.btn{
-  color: white;
+button{
+  color: grey;
+  border-radius: 3;
+  width: 250px;
+  height: 70px;
+  margin: 2px;
+  font-size: 27px;
+  transition-duration: 0.4s;
 }
+
 .btn :hover{
-  color: black;
+  background-color: aqua; 
 }
 
 

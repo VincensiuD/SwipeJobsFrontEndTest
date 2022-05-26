@@ -64,6 +64,8 @@ export function Body({ workerId }) {
 
         <Decision
         key={"decision" + index}
+        workerId={workerId}
+        jobId={x.jobId}
       />
       </div>
      

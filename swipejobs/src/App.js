@@ -1,7 +1,7 @@
 import './App.css';
 import { useEffect,useState } from 'react';
 import {Header} from "../src/Components/header";
-import {Body} from "../src/Components/body";
+import {Router} from "../src/Components/router";
 
 function App() {
 
@@ -31,7 +31,7 @@ useEffect(
   return (
     <div className="App">
       <Header fullName={workerName}/>
-      <Body workerId={workerId} />
+      <Router workerId={workerId} />
     </div>
   );
 }
