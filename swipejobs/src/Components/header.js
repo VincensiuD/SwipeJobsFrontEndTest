@@ -19,5 +19,6 @@ export const style = {
     headerStyle:{
         backgroundColor : "black",
         color: "white",
+        fontSize: 35,
     }
 }

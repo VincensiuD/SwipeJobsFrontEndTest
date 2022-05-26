@@ -6,14 +6,14 @@ export function Location({address,distance}){
     
 
     return(
-        <div style={commStyle.spaceBetween}>
+        <div className="loc" style={commStyle.spaceBetween}>
             <div style={{marginTop: 50, flex:2}}>
                 <IoLocationSharp size="2em"/>
             </div>
             <div style={{textAlign:"left", flex:20}}>
-                <p>Location</p>
+                <h3 style={commStyle.boldSubTitle}>Location</h3>
                 <p>{address}</p>
-                <p>{distance} miles from your job search location</p>
+                <p style={{fontSize: 14}}>{distance} miles from your job search location</p>
             </div>
             <div style={{ marginTop:30}}>
                 <a 

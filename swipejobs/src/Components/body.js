@@ -1,5 +1,5 @@
 import React from "react";
-import { Decision, JobHeader, JobOverview, Location } from "./BodyComponenets";
+import { Decision, JobHeader, JobOverview, Location, Shifts, Requirements, ReportTo } from "./BodyComponenets";
 
 export function Body({ workerId }) {
   const [jobsArray, setJobsArray] = React.useState([]);
@@ -13,14 +13,15 @@ export function Body({ workerId }) {
       const data = await response.json();
       setJobsArray(data);
       setJobsAmount(data.length);
+    
     };
-    fetchedData().catch(console.error).then(console.log(jobsArray));
+    fetchedData().catch(console.error);
   }, []);
 
   let index = 0;
 
   return (
-    <div style={{margin:20}}>
+    <div style={{margin:10,   border: "20px solid grey"}}>
      {jobsArray.map((x,key)=>
      <div style={{margin:10}}>
         <JobHeader
@@ -34,12 +35,32 @@ export function Body({ workerId }) {
         distance={x.milesToTravel}
         hourlyRateInCents={x.wagePerHourInCents}
       />
+
+        <Shifts
+        key={"shifts"+ index}
+        timeArray={x.shifts}
+        />
+
        
         <Location
         key={"location"+ index}
         address={x.company.address.formattedAddress}
         distance={x.milesToTravel}
       />
+
+        <Requirements
+          key={"req" + index}
+          toolsArray={x.requirements}
+        
+       />
+        
+        <ReportTo
+             key={"report" + index}
+             name={x.company.reportTo.name}
+             phone={x.company.reportTo.phone}
+        
+        />
+
 
         <Decision
         key={"decision" + index}
@@ -51,17 +72,3 @@ export function Body({ workerId }) {
   );
 }
 
-
-{/* <JobHeader
-imageUrl={x.jobTitle.imageUrl}
-jobTitle={x.jobTitle.name}
-companyName={x.company.name}
-/>
-<JobOverview
-distance={x.milesToTravel}
-hourlyRateInCents={x.wagePerHourInCents}
-/>
-<Location
-address={x}
-/>
-<Decision /> */}

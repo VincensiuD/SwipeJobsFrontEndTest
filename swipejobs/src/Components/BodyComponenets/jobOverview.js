@@ -22,15 +22,22 @@ export function JobOverview ({distance,hourlyRateInCents}){
 
 const styles= {
     heading:{
-        color: "black"
+        color: "black",
+        paddingLeft:10,
+        paddingRight:10,
+        fontWeight: "bold",
     },
     content:{
         color: "white",
-        fontSize: 50,
+        fontSize: 45,
+        fontWeight: "bold",
+        paddingLeft:10,
+        paddingRight:10,
         
     },
     container:{
         backgroundColor:"#52d9a5",
         maxHeight:120,
+        padding:10,
     }
 }

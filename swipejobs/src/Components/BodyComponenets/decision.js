@@ -1,13 +1,27 @@
-import { toBePartiallyChecked } from "@testing-library/jest-dom/dist/matchers";
-
+import { commStyle } from "../commonStyle";
+import React from "react";
 export function Decision(){
+    // const [bgColour, setBgColour] = React.useState("white");
+
+    // function highlight(){
+    //     setBgColour("black");
+    // }
+
+    // function reset(){
+    //     setBgColour("white");
+    // }
+
+
+    function xx(){
+        console.log("xx")
+    }
 
     return(
-        <div>
-            <button style={style.button}>
+        <div style={style.btnFlex}>
+            <button style={style.button} className="btn" onClick={xx} >
                 No Thanks
             </button>
-            <button style={style.button}>
+            <button style={style.button} className="btn">
                 I'll Take it
             </button>
         </div>
@@ -17,11 +31,16 @@ export function Decision(){
 const style = {
     button:{
         borderRadius: 3,
-        backgroundColor: "black",
-        color: "white",
+        color: "grey",
         width: 250,
         height: 70,
         margin: 2,
+        fontSize: 27,
+
+    },
+    btnFlex:{
+        display: "flex",
+        justifyContent:"center"
 
     }
 }
