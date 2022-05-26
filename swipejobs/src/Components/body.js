@@ -1,5 +1,5 @@
 import React from "react";
-import { Decision, JobHeader, JobOverview } from "./BodyComponenets";
+import { Decision, JobHeader, JobOverview, Location } from "./BodyComponenets";
 
 export function Body({ workerId }) {
   const [jobsArray, setJobsArray] = React.useState([]);
@@ -20,17 +20,48 @@ export function Body({ workerId }) {
   let index = 0;
 
   return (
-    <div>
-      <JobHeader
-        imageUrl={jobsArray[index]?.jobTitle.imageUrl}
-        jobTitle={jobsArray[index]?.jobTitle.name}
-        companyName={jobsArray[index]?.company.name}
+    <div style={{margin:20}}>
+     {jobsArray.map((x,key)=>
+     <div style={{margin:10}}>
+        <JobHeader
+        key={"jobHeader" + index}
+        imageUrl={x.jobTitle.imageUrl}
+        jobTitle={x.jobTitle.name}
+        companyName={x.company.name}
       />
-      <JobOverview 
-        distance={jobsArray[index]?.milesToTravel}
-        hourlyRateInCents={jobsArray[index]?.wagePerHourInCents}
+        <JobOverview
+        key={"jobOverview" + index}
+        distance={x.milesToTravel}
+        hourlyRateInCents={x.wagePerHourInCents}
       />
-      <Decision />
+       
+        <Location
+        key={"location"+ index}
+        address={x.company.address.formattedAddress}
+        distance={x.milesToTravel}
+      />
+
+        <Decision
+        key={"decision" + index}
+      />
+      </div>
+     
+     )}
     </div>
   );
 }
+
+
+{/* <JobHeader
+imageUrl={x.jobTitle.imageUrl}
+jobTitle={x.jobTitle.name}
+companyName={x.company.name}
+/>
+<JobOverview
+distance={x.milesToTravel}
+hourlyRateInCents={x.wagePerHourInCents}
+/>
+<Location
+address={x}
+/>
+<Decision /> */}
