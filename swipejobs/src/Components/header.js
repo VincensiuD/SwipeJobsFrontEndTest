@@ -5,10 +5,10 @@ export function Header({fullName}){
     return(
         <div style={{...commStyle.spaceBetween, ...style.headerStyle}}>
             <div>
-                <p>swipejobs</p>
+                <p style={{paddingLeft: 15}}>swipejobs</p>
             </div>
             <div>
-                <p>{fullName}</p>
+                <p style={{paddingRight: 15}}>{fullName}</p>
             </div>
         </div>
         
@@ -19,6 +19,6 @@ export const style = {
     headerStyle:{
         backgroundColor : "black",
         color: "white",
-        fontSize: 35,
+        fontSize: 45,
     }
 }

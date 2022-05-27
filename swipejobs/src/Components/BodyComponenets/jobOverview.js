@@ -12,8 +12,8 @@ export function JobOverview ({distance,hourlyRateInCents}){
                 <p>Hourly Rate</p>
             </div>
             <div style={{...commStyle.spaceBetween, ...styles.content}}>
-                <p id="miles">{distance} miles</p>
-                <p id="hrly">${hourlyRate}</p>
+                <p id="miles">{distance.toFixed(2)} miles</p>
+                <p id="hrly">${hourlyRate.toFixed(2)}</p>
             </div>
             
         </div>
