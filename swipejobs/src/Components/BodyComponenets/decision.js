@@ -68,5 +68,6 @@ const style = {
         justifyContent:"center",
         paddingRight: "2vh",
         paddingLeft: "2vh",
+        paddingBottom: "2vh"
     }
 }

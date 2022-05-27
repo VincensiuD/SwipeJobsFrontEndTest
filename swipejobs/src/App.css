@@ -11,12 +11,12 @@
 }
 
 .req, .rep, .loc {
-  border-top: 1px solid grey;
+  border-top: 1px groove lightgrey;
 }
 
 button{
   color: grey;
-  border-radius: 10px;
+  border-radius: 5px;
   /* width: 40vw;
   height: 8vh; */
   margin: 2px;

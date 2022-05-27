@@ -34,10 +34,11 @@ const styles= {
         paddingLeft:10,
         paddingRight:10,
         
+        
     },
     container:{
         backgroundColor:"#52d9a5",
         maxHeight:120,
-        padding:10,
+        padding:20,
     }
 }

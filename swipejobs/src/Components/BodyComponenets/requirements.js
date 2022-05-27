@@ -10,7 +10,7 @@ export function Requirements ({toolsArray}){
     }
     
     return(
-        <div className="req" style={commStyle.spaceBetween}>
+        <div className="req" style={{...commStyle.spaceBetween, paddingLeft:30}}>
               <div style={{marginTop: 50, flex:2}}>
                 <FaTools size="2em"/>
             </div>

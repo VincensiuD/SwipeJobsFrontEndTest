@@ -24,7 +24,7 @@ export function Shifts({timeArray}){
    
     
     return(
-        <div  style={commStyle.spaceBetween}>
+        <div  style={{...commStyle.spaceBetween, paddingLeft:30}}>
              <div style={{marginTop: 50, flex:2}}>
                 <FaCalendarAlt size="2em"/>
             </div>

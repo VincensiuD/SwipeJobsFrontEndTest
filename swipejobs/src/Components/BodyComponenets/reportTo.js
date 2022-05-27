@@ -13,7 +13,7 @@ export function ReportTo({name,phone}){
     // let readablePhone =   "(" + areaCode + ") " ;
     
     return(
-        <div className="rep" style={commStyle.spaceBetween}>
+        <div className="rep" style={{...commStyle.spaceBetween, paddingLeft:30}}>
               <div style={{marginTop: 50, flex:2}}>
                 <IoIosContact size="2em"/>
             </div>

@@ -21,9 +21,9 @@ export function Body({ workerId }) {
   let index = 0;
 
   return (
-    <div style={{margin:10,   border: "20px solid grey"}}>
+    <div>
      {jobsArray.map((x,key)=>
-     <div style={{margin:10}}>
+     <div style={{border: "20px solid grey"}} >
         <JobHeader
         key={"jobHeader" + index}
         imageUrl={x.jobTitle.imageUrl}

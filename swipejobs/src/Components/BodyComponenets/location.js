@@ -6,7 +6,7 @@ export function Location({address,distance}){
     
 
     return(
-        <div className="loc" style={commStyle.spaceBetween}>
+        <div className="loc" style={{...commStyle.spaceBetween, paddingLeft:30}}>
             <div style={{marginTop: 50, flex:2}}>
                 <IoLocationSharp size="2em"/>
             </div>
