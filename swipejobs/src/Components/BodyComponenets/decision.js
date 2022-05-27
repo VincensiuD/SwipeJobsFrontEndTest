@@ -50,10 +50,10 @@ export function Decision({workerId,jobId}){
 
     return(
         <div style={style.btnFlex}>
-            <button className="btn hover" onClick={reject} >
+            <button className="btn hover" onClick={reject} style={{backgroundColor: "white"}} >
                 No Thanks
             </button>
-            <button  className="btn hover" onClick={accept}>
+            <button  className="btn hover" onClick={accept} style={{backgroundColor: "black"}}>
                 I'll Take it
             </button>
             

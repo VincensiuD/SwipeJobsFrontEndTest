@@ -24,11 +24,12 @@ button{
   height: 4rem;
   font-size: 27px;
   transition-duration: 0.4s;
-  background-color: white;
+  opacity:1
 }
 
 .btn:hover{
   background-color: black; 
+  opacity: 0.2
 } 
 
 
