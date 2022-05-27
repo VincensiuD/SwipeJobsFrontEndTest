@@ -1,4 +1,3 @@
-import { commStyle } from "../commonStyle";
 import React from "react";
 import { useNavigate } from "react-router-dom";
 

@@ -1,9 +1,8 @@
 import React from "react";
-import { Decision, JobHeader, JobOverview, Location, Shifts, Requirements, ReportTo } from "./BodyComponenets";
+import { Decision, JobHeader, JobOverview, Location, Shifts, Requirements, ReportTo } from "./BodyComponents";
 
 export function Body({ workerId }) {
   const [jobsArray, setJobsArray] = React.useState([]);
-  const [jobsAmount, setJobsAmount] = React.useState(0);
 
   React.useEffect(() => {
     const fetchedData = async () => {
@@ -12,7 +11,6 @@ export function Body({ workerId }) {
       );
       const data = await response.json();
       setJobsArray(data);
-      setJobsAmount(data.length);
     
     };
     fetchedData().catch(console.error);
