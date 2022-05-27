@@ -6,7 +6,8 @@
   margin-block-start: 0;
   margin-block-end: 0;
   font-size: 22px;
-  max-width: 1500px;
+  max-width: 2000px;
+  min-width: 450px;
 }
 
 .req, .rep, .loc {
@@ -16,9 +17,11 @@
 button{
   color: grey;
   border-radius: 10px;
-  width: 250px;
-  height: 70px;
+  /* width: 40vw;
+  height: 8vh; */
   margin: 2px;
+  width: 12rem;
+  height: 4rem;
   font-size: 27px;
   transition-duration: 0.4s;
   background-color: white;

@@ -9,7 +9,7 @@ export function Confirmation (){
     
 
     return(
-        <div>
+        <div style={{fontSize: 55}}>
            
             <p>{location.state.message}</p>
             <p>{location.state.errorCode}</p>

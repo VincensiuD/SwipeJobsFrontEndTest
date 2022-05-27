@@ -65,7 +65,8 @@ const style = {
     
     btnFlex:{
         display: "flex",
-        justifyContent:"center"
-
+        justifyContent:"center",
+        paddingRight: "2vh",
+        paddingLeft: "2vh",
     }
 }
